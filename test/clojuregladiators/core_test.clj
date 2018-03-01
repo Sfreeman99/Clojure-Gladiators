@@ -14,4 +14,9 @@
     (testing "has no rage"
       (is (= (get glad :rage) 0)))
     (testing "is named Bot"
-      (is (= (get glad :name) "Bot")))))
+      (is (= (get glad :name) "Bot")))
+    (testing "has attack low"
+      (is (= (nil? (get glad :attackLow)) false)))
+    (testing "Has attack high"
+      (is (= (nil? (get glad :attackHigh)) false)))
+      ))
